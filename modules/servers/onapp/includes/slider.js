@@ -21,12 +21,12 @@ var init_sliders = function() {
             slider.interval = null;
 
             var update_target = function() {
-                update_swap_disk_size();
+      //          update_swap_disk_size();
                 target.attr("value", parseInt(slider.slider("value").toString()) || 0);
             }
 
             var update_slider = function() {
-                update_swap_disk_size();
+       //         update_swap_disk_size();
                 slider.slider("value", parseInt(target.attr("value").toString()) || 0);
             }
 
@@ -36,7 +36,7 @@ var init_sliders = function() {
             });
 
             slider.bind("slidestop", function() {
-                update_swap_disk_size();
+         //       update_swap_disk_size();
                 clearInterval(slider.interval);
                 slider.interval = null;
             });
